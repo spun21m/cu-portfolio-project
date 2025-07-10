@@ -19,12 +19,8 @@ body {
 }
 
 .container {
-  /* max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem; */
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
 }
 
 header {
@@ -35,9 +31,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; */
 }
 
 header h1 {
@@ -146,6 +142,97 @@ main {
   max-width: 1000px;
   display: block;
   margin: 2rem auto;
+}
+
+.project-container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  
+}
+
+.project-container h3{
+  font-size: 1.5rem;
+  padding-bottom: 1.3rem;
+}
+
+
+.projects-grid{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem; */
+  /* column-count: 2;
+  column-gap: 2rem;
+  padding: 2rem; */
+  display: flex;
+  justify-content: center;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+}
+
+.project-card{
+  /* display: inline-block;
+  width: 100%;
+  break-inside: avoid; */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  /* border-radius: 4px; */
+  width: 300px;
+  height: 300px;
+  /* margin-bottom: 1rem; */
+
+
+}
+
+
+
+.project-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* display: block; */
+}
+
+.project-card:hover img {
+  /* transform: scale(1.05); */
+  /* transition: transform 0.3s ease; */
+}
+.project-card .overlay{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.9)
+  );
+  color: #fff;
+  text-align: center;
+  font-weight: bold;;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 1;
+  transition: background 0.6s ease-in-out;
+}
+
+.project-card:hover .overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
 }
 
 .next-project {

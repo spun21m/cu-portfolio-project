@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects | Sital Pun</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1>Sital Pun</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <h1>projects.</h1>
+            <div class="project active">
+                <h2>project. 01</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                  beatae animi aut repellendus unde cupiditate labore quod. Sapiente,
+                  voluptates eius?
+                </p>
+                <img src="img.png" alt="weather -image" class="project-image" />
+                <div class="next-project">
+                 <div class="next-project" onclick="showNextProject()">Next →</div> 
+                </div>
+      
+            </div>
+            <div class="project">
+              <h2>project. 02</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                beatae animi aut repellendus unde cupiditate labore quod. Sapiente,
+                voluptates eius?
+              </p>
+              <img src="img.png" alt="weather -image" class="project-image" />
+              <div class="next-project">
+               <div class="next-project" onclick="showNextProject()">Next →</div> 
+              </div>
+      
+          </div>
+          <div class="project">
+              <h2>project. 03</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+                beatae animi aut repellendus unde cupiditate labore quod. Sapiente,
+                voluptates eius?
+              </p>
+              <a href="https://earnest-nougat-035198.netlify.app/">
+              <img src="img.png" alt="weather -image" class="project-image" /></a>
+              <div class="next-project">
+               <div class="next-project" onclick="showNextProject()">Next →</div> 
+              </div>
+      
+          </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-details">
+            <div>Phone: 929-305-9144</div>
+            <div>Email: shitalmagar21@gmail.com</div>
+            <div>
+                <p>&copy; 2025 by Sital Pun</p>
+                <p>All rights reserved</p>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        function showNextProject() {
+            const projects = document.querySelectorAll('.project');
+            let activeIndex = Array.from(projects).findIndex(project => project.classList.contains('active'));
+            projects[activeIndex].classList.remove('active');
+            activeIndex = (activeIndex + 1) % projects.length;
+            projects[activeIndex].classList.add('active');
+        }
+    </script>
+  </body>
+</html>
