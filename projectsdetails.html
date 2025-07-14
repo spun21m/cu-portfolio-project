@@ -37,9 +37,13 @@
             <img src="img.png" alt="weather -image" class="project-image"
           /></a>
           <div class="project-navigation">
-            <div></div>
+<div></div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
+
           </div>
+         
+
+          
         </div>
         <div class="project" id="dictionary">
           <h2>project. 02: Dictionary app 📖</h2>
@@ -56,9 +60,7 @@
               class="project-image"
           /></a>
           <div class="project-navigation">
-            <div class="previous-project" onclick="showPreviousProject()">
-              ← Previous
-            </div>
+            <div class="previous-project" onclick="showPreviousProject()">← Previous</div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
           </div>
         </div>
@@ -78,9 +80,7 @@
               class="project-image"
           /></a>
           <div class="project-navigation">
-            <div class="previous-project" onclick="showPreviousProject()">
-              ← Previous
-            </div>
+            <div class="previous-project" onclick="showPreviousProject()">← Previous</div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
           </div>
         </div>
@@ -100,9 +100,7 @@
               class="project-image"
           /></a>
           <div class="project-navigation">
-            <div class="previous-project" onclick="showPreviousProject()">
-              ← Previous
-            </div>
+            <div class="previous-project" onclick="showPreviousProject()">← Previous</div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
           </div>
         </div>
@@ -122,9 +120,7 @@
               class="project-image"
           /></a>
           <div class="project-navigation">
-            <div class="previous-project" onclick="showPreviousProject()">
-              ← Previous
-            </div>
+            <div class="previous-project" onclick="showPreviousProject()">← Previous</div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
           </div>
         </div>
@@ -144,9 +140,7 @@
               class="project-image"
           /></a>
           <div class="project-navigation">
-            <div class="previous-project" onclick="showPreviousProject()">
-              ← Previous
-            </div>
+            <div class="previous-project" onclick="showPreviousProject()">← Previous</div>
             <div class="next-project" onclick="showNextProject()">Next →</div>
           </div>
         </div>
@@ -165,7 +159,8 @@
       </div>
     </footer>
     <script>
-      function showPreviousProject() {
+
+function showPreviousProject() {
         const projects = document.querySelectorAll(".project");
         let activeIndex = Array.from(projects).findIndex((project) =>
           project.classList.contains("active")
@@ -187,21 +182,22 @@
       }
 
       //when the page loads, hash checked
-      window.addEventListener("load", () => {
+      window.addEventListener('load', () =>{
         const projects = document.querySelectorAll(".project");
-        projects.forEach((p) => p.classList.remove("active"));
+        projects.forEach(p => p.classList.remove("active"));
 
         const hash = window.location.hash.substring(1); // remove the #
         const target = document.getElementById(hash);
 
         if (target) {
           target.classList.add("active");
-          target.scrollIntoView({ behavior: "smooth" });
+          target.scrollIntoView({behavior: "smooth"});
         } else {
           // fallback to the first project
           projects[0].classList.add("active");
         }
-      });
+      })
+
     </script>
   </body>
 </html>

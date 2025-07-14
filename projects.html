@@ -58,16 +58,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      function showNextProject() {
-        const projects = document.querySelectorAll(".project");
-        let activeIndex = Array.from(projects).findIndex((project) =>
-          project.classList.contains("active")
-        );
-        projects[activeIndex].classList.remove("active");
-        activeIndex = (activeIndex + 1) % projects.length;
-        projects[activeIndex].classList.add("active");
-      }
-    </script>
   </body>
 </html>
