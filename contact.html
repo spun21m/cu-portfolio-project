@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Sital Pun - frontend developer. Send a message, view social profiles, and connect for collaboration or job opportunities."
+    />
+    <meta name="author" content="Sital Pun" />
+    <meta name="robots" content="index, follow" />
+    <title>Contact Me | Sital Pun</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -11,24 +18,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <title>Contact Me | Sital Pun</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1><a href="/">Sital Pun</a></h1>
+        <h1><a href="/" aria-label="Go to homepage">Sital Pun</a></h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
           </ul>
         </nav>
       </header>
       <main>
-       
         <div class="contact-container">
           <div class="contact-info">
             <div class="slide-in">
@@ -107,15 +115,16 @@
     <footer>
       <div class="footer-details">
         <div class="footer-section contact-icons">
-          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
           <span>929-305-9144</span>
         </div>
         <div class="footer-section contact-icons">
-          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           <a
             href="mailto:shitalmagar21@gmail.com"
             target="_blank"
-            aria-label="Email"
+            rel="noopener noreferrer"
+            aria-label="Send email to shitalmagar21@gmail.com"
           >
             Shitalmagar21@gmail.com
           </a>
@@ -124,16 +133,18 @@
           <a
             href="https://linkedin.com/in/sital-pun-758843280/"
             target="_blank"
-            aria-label="LinkedIn"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
           </a>
           <a
             href="https://github.com/spun21m"
             target="_blank"
-            aria-label="GitHub"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
           >
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
           </a>
         </div>
         <div class="footer-bottom">
