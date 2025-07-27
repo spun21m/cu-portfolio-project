@@ -309,7 +309,7 @@ p {
 
 }
 
-.contact-info .contact-icons i{
+.contact-icons i{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -390,9 +390,14 @@ textarea {
   background-color: #e17b7b;
 }
 footer {
-  text-align: center;
-  padding: 1rem;
+  /* text-align: center; */
+  background-color: var(--accent-color);
+
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 14px;
 }
+
 
 .footer-inquiry {
   background-color: var(--accent-color);
@@ -421,7 +426,7 @@ footer {
   text-decoration: none;
   color: var(--primary-color-text);
   font-weight: bold;
-  background-color: var(--background-color);
+  background-color: var(--primary-button-color);
   padding: 1rem 2rem;
   border-radius: 10px;
   text-align: center;
@@ -429,20 +434,76 @@ footer {
 }
 
 .footer-inquiry a:hover {
-  background-color: #ffaaa5;
+  background-color: #e17b7b;
 }
 
 .footer-details {
   margin-top: 2rem;
-  color: var(--primary-color-text);
-  width: 100%;
+  /* color: var(--primary-color-text); */
+  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
   /* gap: 5rem; */
   flex-wrap: wrap;
+  text-align: center;
 }
+
+
+.footer-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* font-weight: 500; */
+  color: var(--primary-color-text);
+
+}
+
+.footer-section a{
+  text-decoration: none;
+  color: var(--primary-color-text);
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #e17b7b;
+}
+
+
+
+.footer-section i{
+  font-size: 20px;
+  background-color: #e17b7b;
+  /* color: var(--highlight-color); */
+  color: #fff;
+  transition: background-color 0.3s ease;
+
+/* border-radius: 50%;
+background-color: #e17b7b;
+display: flex;
+justify-content: center;
+align-items: center; */
+}
+
+.footer-section a:hover i{
+  background-color: var(--primary-button-color);
+  color: #fff;
+}
+
+.footer-section a:hover{
+  color: #e17b7b;
+}
+
+.footer-section.social-icons a i{
+  font-size: 24px;
+}
+
+.footer-section.social-icons a:hover i{
+  background-color: var(--background-color);
+  color: #e17b7b;
+}
+
 
 .footer-details div {
   padding: 0 1.5rem;
@@ -453,7 +514,13 @@ footer {
   text-align: center;
 }
 
-.footer-details div:last-child {
+.footer-bottom{
   /* padding: 0 1.5rem; */
-  border-right: none;
+  /* border-right: none; */
+  /* margin-top: 1.5rem; */
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
 }
+
+
