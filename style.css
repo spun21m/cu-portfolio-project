@@ -291,11 +291,6 @@ p {
   flex-wrap: wrap;
 }
 
-.contact-info,
-.contact-form {
-  flex: 1 1 400px;
-}
-
 .contact-info .big-title {
   font-size: 130px;
   line-height: 1;
@@ -451,6 +446,11 @@ p {
   }
 } */
 
+.contact-info,
+.contact-form {
+  flex: 1 1 400px;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -499,6 +499,7 @@ textarea {
 .submit-container button:hover {
   background-color: #e17b7b;
 }
+
 footer {
   /* text-align: center; */
   background-color: var(--accent-color);
@@ -548,13 +549,10 @@ footer {
 
 .footer-details {
   margin-top: 2rem;
-  /* color: var(--primary-color-text); */
-  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  /* gap: 5rem; */
   flex-wrap: wrap;
   text-align: center;
 }
@@ -580,15 +578,8 @@ footer {
 .footer-section i {
   font-size: 20px;
   background-color: #e17b7b;
-  /* color: var(--highlight-color); */
   color: #fff;
   transition: background-color 0.3s ease;
-
-  /* border-radius: 50%;
-background-color: #e17b7b;
-display: flex;
-justify-content: center;
-align-items: center; */
 }
 
 .footer-section a:hover i {
@@ -625,10 +616,6 @@ align-items: center; */
 }
 
 @media (max-width: 480px) {
-  /* .intro {
-    max-width: 95vw;
-  } */
-
   header {
     padding: 1rem;
   }
@@ -652,13 +639,8 @@ align-items: center; */
   }
 
   .intro h2 {
-    /* font-size: 3rem; */
-  display: none;
+    display: none;
   }
-/* 
-  .wave {
-    font-size: 30px;
-  } */
 
   .intro p:first-of-type {
     font-size: 1.7rem;
@@ -687,6 +669,85 @@ align-items: center; */
     height: 70px;
     font-size: 0.7rem;
   }
+
+  .contact-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .contact-info .big-title {
+    font-size: 90px;
+  }
+
+  .contact-info .subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .contact-info .description {
+    font-size: 12px;
+    margin-top: 1rem;
+
+    text-align: center;
+  }
+
+  .contact-info .contact-icons {
+    margin-top: 1rem;
+  }
+
+  .contact-info .contact-icons h3 {
+    font-size: 1.4rem;
+  }
+
+  .contact-info .contact-icons a {
+    font-size: 14px;
+  }
+
+  .contact-info .contact-icons a:hover {
+    color: #e17b7b;
+  }
+
+  .contact-icons i {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-form form {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .contact-form label {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  .submit-container button {
+    margin-top: 0px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+ .project-container h2 {
+  margin-bottom: 1rem;
+}
+
+.project-container h3 {
+  font-size: 0.7rem;
+  padding-bottom: 0;
+}
+
+
+  .project-card {
+  width: 200px;
+  height: 200px;
+}
 
   footer {
     padding: 0.8rem 1rem;
