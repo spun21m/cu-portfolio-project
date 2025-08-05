@@ -658,15 +658,15 @@ footer {
   }
 
   .profile-image img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .buttons {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   .btn-link {
     width: 70px;
